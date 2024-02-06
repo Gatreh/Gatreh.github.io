@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Exploits - Bingo</title>
+    <link rel="icon" type="image/svg" href="hedgehog006400.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="bingo(techScam, 3, 3)">
+
+<header class="banner">
+    <div class="logo-container">
+        <img src="hedgehog006400.svg" alt="logo">
+    </div>
+    <h1 class="banner-title"><b>Strategic Exploits</b></h1>
+</header>
+
+<main>
+    <div class="content-wrapper">
+        <div class="column cv-link">
+            <h2>The Bingo Collection</h2>
+            <p>This is a collection of highly customis-eable bingos that defaults to tech scams, best used while watching youtube videos on messing with tech support scammers as it implements a lot of quotes from those sorts of videos.</p>
+            <button class="btn reset" onclick="bingo(techScam, 3, 3)">Reset</button>
+            </div>
+        <div class="column" id="bingoBoard">Setting up...
+        </div>
+        <div class="column">
+            <button class="btn report" href="https://www.microsoft.com/reportascam" target="_blank">Report windows tech scams</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>Social Media</p>
+        <a href="https://twitch.tv/gatreh" target="_blank">
+            <img src="twitch.png" alt="Twitch">
+        </a>
+        <a href="https://www.youtube.com/channel/UC9fmryROT_7QvTzghfiNtWg" target="_blank">
+            <img src="youtube.png" alt="Youtube">
+        </a>
+        <a href="https://mastodon.social/@Gatreh" target="_blank">
+            <img src="mastodon.ico" alt="Mastodon">
+        </a>
+        <a href="https://www.linkedin.com/in/kim-h%C3%A4ggblom-ba6a3411b/" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Gatreh" target="_blank">
+            <img src="github.png" alt="GitHub">
+        </a>
+    </div>
+</footer>
+<script src="bingo.js"></script>
+</body>
+</html>

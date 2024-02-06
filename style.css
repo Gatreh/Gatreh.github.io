@@ -1,0 +1,159 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+main {
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banner {
+    background: url('website-banner.png') no-repeat center center;
+    background-size: auto 330px;
+    min-height: 330px; /* Height needs to be the same at all times, Should not be possible to remove sections based on window height.*/
+    width: 100%;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-61%, -60%);
+    max-width: 175px; /* Adjust as necessary */
+    max-height: 175px; /* Adjust as necessary */
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap', monospace;
+    bottom: 10%; /* Adjust distance from the bottom of the banner */
+    left: 50%;
+    transform: translateX(-51%);
+    color: #333; /* Adjust color for visibility */
+    font-size: 2em; /* Adjust size for visibility */
+    /* Add any additional styling such as font-family, text-shadow, etc. */
+}
+
+@media screen and (min-width: 1225px) { /* was 955 before and worked fine but not now apparently*/
+    .banner {
+        background-size: 100% 330px; /* Stretches the image to cover the width */
+    }
+}
+@media screen and (max-width: 768px) { /* Adjust this breakpoint as needed */
+    .content-wrapper {
+            width: 95%; /* Allows the content to take up more space on smaller screens */
+    }
+    .column {
+        padding: 0 10px; /* Adds padding to the columns */
+    }
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%; /* Adjust this percentage as needed */
+    max-width: 1200px; /* Adjust maximum width as needed */
+}
+
+.column {
+    width: 100%;
+    box-sizing: border-box;
+}
+.portfolio {
+    padding: 0px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.cv-link {
+    padding: 0px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%
+}
+
+.footer-content p {
+    margin-top: 0;
+}
+
+.footer-content a {
+    margin: 0 10px;
+}
+
+.footer-content img {
+    height: 30px; /* Adjust the size as needed */
+}
+
+/* Bingo stuff */
+
+button {
+  margin: 3px;
+  width: 150px;
+  height: 90px;
+  font-size: 20px;
+}
+
+.btn {
+  font-size: 20px;
+  white-space: normal;
+  background-color: rgba(0,131,198,0.7);
+}
+
+.report {
+  display:block;
+  margin: 3px auto;
+}
+
+.btn:hover {
+  background-color: rgba(0,151,208,1);
+}
+
+.reset {
+  font-size: 40px;
+  display: block;
+  margin: 3px auto;
+  background-color: rgba(0,198,131,0.7);
+}
+
+#content{
+  margin: 5% 10% 5% 10%;
+}
+
+table {
+  margin: 0 auto;
+}
+td {
+  display: inline-block;
+}
+
+.winner {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  margin: 0px;
+  padding: 0px;
+}
