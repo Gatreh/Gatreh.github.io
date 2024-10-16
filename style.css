@@ -10,12 +10,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #BBB;
 }
 main {
     flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    background-color: #181a1b;
 }
 .banner {
     background: url('website-banner.png') no-repeat center center;
@@ -78,16 +80,19 @@ main {
     width: 100%;
     box-sizing: border-box;
 }
+
+
 .portfolio {
     padding: 0px 20px;
-    background-color: #fff;
+    background-color: #1e2122;
     text-align: center;
 }
 .cv-link {
     padding: 0px 20px;
-    background-color: #f4f4f4;
+    background-color: #1e2122;
     text-align: center;
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -134,7 +139,6 @@ button {
 
 .reset {
   font-size: 40px;
-  display: block;
   margin: 3px auto;
   background-color: rgba(0,198,131,0.7);
 }
